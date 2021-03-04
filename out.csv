@@ -1,0 +1,2 @@
+Message Payload in SQS,Log Message in CloudWatch,Query Start Time,Query End Time
+"{""clientId"":""CELADEV03"",""cid"":214,""bid"":16,""type"":""ACK1""}",16651 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: System configuration is not enabled; ,1614714707998,1614714767998
