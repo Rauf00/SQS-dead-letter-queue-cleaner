@@ -73,7 +73,19 @@ const createQuery = async(params) => {
     return returnStatement
 }
 
-const getLogStream = async function(startTime, endTime, message){
+const runQuery = async(params) => {
+    let returnStatement = new Promise((resolve, reject) => {
+        cloudwatchlogs.getQueryResults(params, function (err, data) {
+            if (err)
+                reject(err); // an error occurred
+            else
+                resolve(data);
+        });
+    });
+    return returnStatement;
+};
+
+const getLogStreamName = async function(startTime, endTime, message){
     let messagBodyObj = JSON.parse(message.Body)
     let payload = '"clientId":"' + messagBodyObj.clientId + '","cid":' + messagBodyObj.cid + ',"bid":' + messagBodyObj.bid + ',"type":"' + messagBodyObj.type + '"'
     let params = {
@@ -87,15 +99,40 @@ const getLogStream = async function(startTime, endTime, message){
     let queryID = await createQuery(params);
     let logStream = await runQuery(queryID);
     while(logStream.status !== 'Complete'){
+        console.log('not yet')
         logStream = await runQuery(queryID)
     }
+    console.log(logStream)
     return logStream.results[0][1].value
 }
 
-const queryLogs = async function(SQSmessages) {
+
+const getLogsFromStream = function(startTime, endTime, logStreamName){
+    var params = {
+        logGroupName: 'dev-OH-TaskConsumer', /* required */
+        logStreamName: logStreamName, /* required */
+        endTime: endTime,
+        limit: 10,
+        startFromHead: true,
+        startTime: startTime
+      };
+      return new Promise((resolve, reject) => {
+        cloudwatchlogs.getLogEvents(params, function(err, data) {
+            if (err) 
+                reject(err) // an error occurred
+            else  
+                resolve(data.events)           // successful response
+          });
+      })
+      
+}
+
+const resultLogs = [];
+
+const getErrorLogForSQSmessages = async function(SQSmessages) {
     let queryIDs = [];
     for (const message of SQSmessages){
-        // skip and delete
+        // skip message and delete it
         if (processedSQSMessages.includes(message.Body)){
             console.log('Message has already been processed. Skipping...')
             // await deleteSQSMessage(message.ReceiptHandle).then(async (data) => {
@@ -105,58 +142,25 @@ const queryLogs = async function(SQSmessages) {
             continue;
         }
         processedSQSMessages.push(message.Body);
-        
+
+        // get @logStream name in the Log Group using the message payload
+        let startTime = message.Attributes.ApproximateFirstReceiveTimestamp;
         let endTimeInt = parseInt(message.Attributes.ApproximateFirstReceiveTimestamp) + 60000
         let endTime = endTimeInt.toString();
-        let logStream = await getLogStream(message.Attributes.ApproximateFirstReceiveTimestamp, endTime, message)
-        console.log("loStream", logStream)
-        let params = {
-            startTime: message.Attributes.ApproximateFirstReceiveTimestamp,
-            endTime: endTime,
-            queryString: "fields @timestamp, @message | sort @timestamp asc | filter @message like /ERROR/",
-            logGroupNames: [
-                'dev-OH-TaskConsumer'
-            ]
+        let logStreamName = await getLogStreamName(message.Attributes.ApproximateFirstReceiveTimestamp, endTime, message)
+
+        // get logs from the Log Stream 
+        let logsFromStream = await getLogsFromStream(startTime, endTime, logStreamName);
+
+        for(const log of logsFromStream){
+            if(log.message.includes("[main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR:")){
+                console.log(log.message)
+                resultLogs.push(log.message)
+            }
         }
-        let queryID = await createQuery(params);
-        queryStartTimes.push(message.Attributes.ApproximateFirstReceiveTimestamp);
-        queryEndTimes.push(endTime);
-        console.log('Creating query for message with payload ' + message.Body + ' between ' + message.Attributes.ApproximateFirstReceiveTimestamp + ' and ' + endTime + ' Epoch time')
-        queryIDs.push(queryID)
         messagePayloads.push(message.Body)
     }
     return queryIDs;
-}
-
-const runQuery = async(params) => {
-    let returnStatement = new Promise((resolve, reject) => {
-        cloudwatchlogs.getQueryResults(params, function (err, data) {
-            if (err)
-                reject(err); // an error occurred
-            else
-                resolve(data);
-        });
-    });
-    return returnStatement;
-};
-
-const receiveLogs = async function(queryIDs, messages) {
-    for(let i = 0; i < queryIDs.length; i++){
-        console.log('\nRetrieving query data...')
-        queryResult = await runQuery(queryIDs[i]);
-        if(typeof(queryResult.results[0]) === "undefined"){
-            logsNotFoundCounter++;
-            console.log('No log is found. Message is not deleted\n');
-            continue;
-        } else {
-            queryResults.push([queryResult.results[0][0].value, queryResult.results[0][1].value]);
-            console.log('Log is retrieved');
-            // await deleteSQSMessage(messages[i].ReceiptHandle).then(async (data) => {
-            //         deletedSQSMessagescounter++;
-            //         console.log('Message is deleted');
-            //     });
-        }
-    }
 }
 
 const writeToCSV = (messagePayloads, queryResults) => {
@@ -181,13 +185,13 @@ const getAllResults = async function(){
     while (msgCounter < NUM_OF_MSG_IN_SQS){
         console.log('\nStarted retrieving next 10 SQS messages...\n')
         await recieveSQSmessages().then(async (data) => {
-            let queryIDs = await queryLogs(data.Messages);
-            await receiveLogs(queryIDs, data.Messages)
+            let queryIDs = await getErrorLogForSQSmessages(data.Messages);
+            // await receiveLogs(queryIDs, data.Messages)
         })
         
         msgCounter += 10;
     }
-    writeToCSV(messagePayloads, queryResults);
+    // writeToCSV(messagePayloads, queryResults);
     console.log();
     console.log('Not found logs for ' + logsNotFoundCounter + ' SQS Messages')
     console.log(NUM_OF_MSG_IN_SQS + ' SQS Messages are processed');
