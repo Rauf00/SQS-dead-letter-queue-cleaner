@@ -1,11 +1,11 @@
 Message Payload in SQS,Log Message in CloudWatch,Query Start Time,Query End Time
-"{""clientId"":""CELADEV03"",""cid"":""90"",""bid"":""1"",""type"":""BID_AVAILABLE""}",185345 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""14"",""type"":""BID_AVAILABLE""}",170259 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""66"",""bid"":""2"",""type"":""BID_AVAILABLE""}",216863 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""203"",""bid"":""1"",""type"":""BID_AVAILABLE""}",196300 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""122"",""bid"":""1"",""type"":""BID_AVAILABLE""}",227836 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""8"",""type"":""BID_AVAILABLE""}",239197 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""4"",""type"":""BID_AVAILABLE""}",232723 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""12"",""type"":""BID_AVAILABLE""}",261484 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""2"",""type"":""BID_AVAILABLE""}",223592 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""71"",""bid"":""3"",""type"":""BID_AVAILABLE""}",267191 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""67"",""bid"":""1"",""type"":""BID_AVAILABLE""}",29355 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715304335,1614715364335
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""1"",""type"":""BID_AVAILABLE""}",37899 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715312921,1614715372921
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""2"",""type"":""BID_AVAILABLE""}",39774 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715314744,1614715374744
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""89"",""type"":""BID_AVAILABLE""}",45590 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715320468,1614715380468
+"{""clientId"":""CELADEV03"",""cid"":""140"",""bid"":""1"",""type"":""BID_AVAILABLE""}",80984 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715356039,1614715416039
+"{""clientId"":""CELADEV03"",""cid"":""198"",""bid"":""2"",""type"":""BID_AVAILABLE""}",41784 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715316604,1614715376604
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""6"",""type"":""BID_AVAILABLE""}",111635 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715386681,1614715446681
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""5"",""type"":""BID_AVAILABLE""}",102122 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715376963,1614715436963
+"{""clientId"":""CELADEV03"",""cid"":""186"",""bid"":""1"",""type"":""BID_AVAILABLE""}",104027 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715379068,1614715439068
+"{""clientId"":""CELADEV03"",""cid"":""200"",""bid"":""2"",""type"":""BID_AVAILABLE""}",127535 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715402529,1614715462529

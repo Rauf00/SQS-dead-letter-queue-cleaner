@@ -86,7 +86,7 @@ const runQuery = async(params) => {
 };
 
 const getLogStreamName = async function(startTime, endTime, message){
-    console.log('Searching for log in time range: ', startTime, endTime);
+    console.log('Searching for log stream name in time range: ', startTime, endTime);
     let messagBodyObj = JSON.parse(message.Body)
     let payload = '"clientId":"' + messagBodyObj.clientId + '","cid":"' + messagBodyObj.cid + '","bid":"' + messagBodyObj.bid + '","type":"' + messagBodyObj.type + '"'
     let params = {
@@ -104,10 +104,11 @@ const getLogStreamName = async function(startTime, endTime, message){
         logStream = await runQuery(queryID)
     }
     if(logStream.results.length === 0){
-        console.log("Log Stream isn't found")
+        console.log("WARNING: Log stream name IS NOT FOUND\n");
         logsNotFoundCounter++;
         return '';
     }
+    console.log("Log stream name is retrieved")
     return logStream.results[0][1].value
 }
 
@@ -150,16 +151,15 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
         let endTime = endTimeInt.toString();
         let logStreamName = await getLogStreamName(startTime, endTime, message)
         if(logStreamName === ''){
-            resultLogs.push('Log is not found')
+            resultLogs.push('Log stream name is not found')
         } else{
             // get logs from the Log Stream 
             let logsFromStream = await getLogsFromStream(startTime, endTime, logStreamName);
-            console.log("INFO com.celayix.consumer.AppServerProxy - main- requestPayload :" + message.Body)
             for(let i = 0; i < logsFromStream.length; i++){
                 if(logsFromStream[i].message.includes("INFO com.celayix.consumer.AppServerProxy  - main- requestPayload :" + message.Body.toString())){
                     for(let j = i; j < logsFromStream.length; j++){
                         if(logsFromStream[j].message.includes("ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error:")){
-                            console.log(logsFromStream[j].message)
+                            console.log("SUCCESS: ", logsFromStream[j].message)
                             resultLogs.push(logsFromStream[j].message)
                             break;
                         }
@@ -167,8 +167,10 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
                     break;
                 }
             }
-            messagePayloads.push(message.Body)
-            console.log()
+            messagePayloads.push(message.Body);
+            queryStartTimes.push(startTime);
+            queryEndTimes.push(endTime);
+            console.log();
         }
     }
 }
@@ -179,8 +181,8 @@ const writeToCSV = (messagePayloads, resultLogs) => {
             let output = {};
             output["messagePayload"] = messagePayloads[i];
             output["log"] = resultLogs[i];
-            // output["queryStartTime"] = queryStartTimes[i];
-            // output["queryEndTime"] = queryEndTimes[i];
+            output["queryStartTime"] = queryStartTimes[i];
+            output["queryEndTime"] = queryEndTimes[i];
             outputCSV.push(output)
         }
         csvWriter
