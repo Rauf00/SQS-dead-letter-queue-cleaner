@@ -4,7 +4,7 @@ AWS.config.update({region: 'us-east-2'});
 const cloudwatchlogs = new AWS.CloudWatchLogs();
 let sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 let queueURL = "https://sqs.us-east-2.amazonaws.com/955577125609/dev-OH-due-schedules-dead-queue";
-const NUM_OF_MSG_IN_SQS = 10;
+const NUM_OF_MSG_IN_SQS = 500;
 const csvWriter = createCsvWriter({
     path: 'out.csv',
     header: [
@@ -137,10 +137,10 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
         // skip message and delete it
         if (processedSQSMessages.includes(message.Body)){
             console.log('Message has already been processed. Skipping...')
-            // await deleteSQSMessage(message.ReceiptHandle).then(async (data) => {
-            //         deletedSQSMessagescounter++;
-            //         console.log('Skipped message is deleted.');
-            //     });
+            await deleteSQSMessage(message.ReceiptHandle).then(() => {
+                    deletedSQSMessagescounter++;
+                    console.log('Skipped message is deleted.');
+                });
             continue;
         }
         processedSQSMessages.push(message.Body);
@@ -161,6 +161,10 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
                         if(logsFromStream[j].message.includes("ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error:")){
                             console.log("SUCCESS: ", logsFromStream[j].message)
                             resultLogs.push(logsFromStream[j].message)
+                            await deleteSQSMessage(message.ReceiptHandle).then(() => {
+                                deletedSQSMessagescounter++;
+                                console.log('NOTE: Message is deleted from SQS');
+                            });
                             break;
                         }
                     }

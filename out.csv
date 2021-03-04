@@ -1,11 +1,193 @@
 Message Payload in SQS,Log Message in CloudWatch,Query Start Time,Query End Time
-"{""clientId"":""CELADEV03"",""cid"":""67"",""bid"":""1"",""type"":""BID_AVAILABLE""}",29355 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715304335,1614715364335
-"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""1"",""type"":""BID_AVAILABLE""}",37899 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715312921,1614715372921
-"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""2"",""type"":""BID_AVAILABLE""}",39774 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715314744,1614715374744
-"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""89"",""type"":""BID_AVAILABLE""}",45590 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715320468,1614715380468
-"{""clientId"":""CELADEV03"",""cid"":""140"",""bid"":""1"",""type"":""BID_AVAILABLE""}",80984 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715356039,1614715416039
-"{""clientId"":""CELADEV03"",""cid"":""198"",""bid"":""2"",""type"":""BID_AVAILABLE""}",41784 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715316604,1614715376604
-"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""6"",""type"":""BID_AVAILABLE""}",111635 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715386681,1614715446681
-"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""5"",""type"":""BID_AVAILABLE""}",102122 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715376963,1614715436963
-"{""clientId"":""CELADEV03"",""cid"":""186"",""bid"":""1"",""type"":""BID_AVAILABLE""}",104027 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715379068,1614715439068
-"{""clientId"":""CELADEV03"",""cid"":""200"",""bid"":""2"",""type"":""BID_AVAILABLE""}",127535 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715402529,1614715462529
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""2"",""type"":""BID_AVAILABLE""}",123246 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715398295,1614715458295
+"{""clientId"":""CELADEV03"",""cid"":""77"",""bid"":""1"",""type"":""BID_AVAILABLE""}",114639 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715389681,1614715449681
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""5"",""type"":""BID_AVAILABLE""}",179558 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715454594,1614715514594
+"{""clientId"":""CELADEV03"",""cid"":""78"",""bid"":""1"",""type"":""BID_AVAILABLE""}",190372 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715465411,1614715525411
+"{""clientId"":""CELADEV03"",""cid"":""202"",""bid"":""3"",""type"":""BID_AVAILABLE""}",189433 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715464340,1614715524340
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""16"",""type"":""BID_AVAILABLE""}",197257 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715472290,1614715532290
+"{""clientId"":""CELADEV03"",""cid"":""71"",""bid"":""4"",""type"":""BID_AVAILABLE""}",213010 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715488032,1614715548032
+"{""clientId"":""CELADEV03"",""cid"":""130"",""bid"":""2"",""type"":""BID_AVAILABLE""}",245701 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715520737,1614715580737
+"{""clientId"":""CELADEV03"",""cid"":""190"",""bid"":""1"",""type"":""BID_AVAILABLE""}",245231 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715520278,1614715580278
+"{""clientId"":""CELADEV03"",""cid"":""109"",""bid"":""1"",""type"":""BID_AVAILABLE""}",250131 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715524974,1614715584974
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""91"",""type"":""BID_AVAILABLE""}",266701 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715541735,1614715601735
+"{""clientId"":""CELADEV03"",""cid"":""218"",""bid"":""1"",""type"":""BID_AVAILABLE""}",295620 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715570448,1614715630448
+"{""clientId"":""CELADEV03"",""cid"":""119"",""bid"":""1"",""type"":""BID_AVAILABLE""}",288161 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715562989,1614715622989
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""55"",""type"":""BID_AVAILABLE""}",283899 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715558954,1614715618954
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""76"",""type"":""BID_AVAILABLE""}",302611 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715577621,1614715637621
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""4"",""type"":""BID_AVAILABLE""}",307066 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715582121,1614715642121
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""7"",""type"":""BID_AVAILABLE""}",328810 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715603855,1614715663855
+"{""clientId"":""CELADEV03"",""cid"":""35"",""bid"":""1"",""type"":""BID_AVAILABLE""}",341831 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715616859,1614715676859
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""16"",""type"":""BID_AVAILABLE""}",349589 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715624408,1614715684408
+"{""clientId"":""CELADEV03"",""cid"":""210"",""bid"":""2"",""type"":""BID_AVAILABLE""}",356086 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715631145,1614715691145
+"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""5"",""type"":""BID_AVAILABLE""}",279872 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715554881,1614715614881
+"{""clientId"":""CELADEV03"",""cid"":""195"",""bid"":""3"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715576179,1614715636179
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""1"",""type"":""BID_AVAILABLE""}",301129 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715561941,1614715621941
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""2"",""type"":""BID_AVAILABLE""}",287019 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715587255,1614715647255
+"{""clientId"":""CELADEV03"",""cid"":""72"",""bid"":""3"",""type"":""BID_AVAILABLE""}",312219 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715604904,1614715664904
+"{""clientId"":""CELADEV03"",""cid"":""114"",""bid"":""1"",""type"":""BID_AVAILABLE""}",329840 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715608288,1614715668288
+"{""clientId"":""CELADEV03"",""cid"":""170"",""bid"":""1"",""type"":""BID_AVAILABLE""}",333242 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715605816,1614715665816
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""95"",""type"":""BID_AVAILABLE""}",330800 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715621190,1614715681190
+"{""clientId"":""CELADEV03"",""cid"":""202"",""bid"":""1"",""type"":""BID_AVAILABLE""}",346151 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715629672,1614715689672
+"{""clientId"":""CELADEV03"",""cid"":""166"",""bid"":""1"",""type"":""BID_AVAILABLE""}",354715 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715290400,1614715350400
+"{""clientId"":""CELADEV03"",""cid"":""213"",""bid"":""1"",""type"":""BID_AVAILABLE""}",15642 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715291664,1614715351664
+"{""clientId"":""CELADEV03"",""cid"":""121"",""bid"":""3"",""type"":""BID_AVAILABLE""}",16774 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715313409,1614715373409
+"{""clientId"":""CELADEV03"",""cid"":""113"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715304862,1614715364862
+"{""clientId"":""CELADEV03"",""cid"":""217"",""bid"":""1"",""type"":""BID_AVAILABLE""}",38538 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715294503,1614715354503
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""6"",""type"":""BID_AVAILABLE""}",29803 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715350542,1614715410542
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""94"",""type"":""BID_AVAILABLE""}",19700 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715350087,1614715410087
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""9"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715353920,1614715413920
+"{""clientId"":""CELADEV03"",""cid"":""34"",""bid"":""5"",""type"":""BID_AVAILABLE""}",75666 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715630685,1614715690685
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""12"",""type"":""BID_AVAILABLE""}",75036 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715654571,1614715714571
+"{""clientId"":""CELADEV03"",""cid"":""126"",""bid"":""1"",""type"":""BID_AVAILABLE""}",78880 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715655032,1614715715032
+"{""clientId"":""CELADEV03"",""cid"":""208"",""bid"":""1"",""type"":""BID_AVAILABLE""}",355639 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715658385,1614715718385
+"{""clientId"":""CELADEV03"",""cid"":""124"",""bid"":""1"",""type"":""BID_AVAILABLE""}",379525 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715303769,1614715363769
+"{""clientId"":""CELADEV03"",""cid"":""176"",""bid"":""1"",""type"":""BID_AVAILABLE""}",379990 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715318500,1614715378500
+"{""clientId"":""CELADEV03"",""cid"":""165"",""bid"":""3"",""type"":""BID_AVAILABLE""}",383324 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715351262,1614715411262
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""2"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715341058,1614715401058
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""5"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715319953,1614715379953
+"{""clientId"":""CELADEV03"",""cid"":""67"",""bid"":""4"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715322924,1614715382924
+"{""clientId"":""CELADEV03"",""cid"":""212"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715459849,1614715519849
+"{""clientId"":""CELADEV03"",""cid"":""52"",""bid"":""3"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715455622,1614715515622
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""4"",""type"":""BID_AVAILABLE""}",28828 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715467419,1614715527419
+"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""4"",""type"":""BID_AVAILABLE""}",43698 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715452662,1614715512662
+"{""clientId"":""CELADEV03"",""cid"":""114"",""bid"":""2"",""type"":""BID_AVAILABLE""}",76421 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715295891,1614715355891
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""20"",""type"":""BID_AVAILABLE""}",66185 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715302504,1614715362504
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""15"",""type"":""BID_AVAILABLE""}",44962 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715303270,1614715363270
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""24"",""type"":""BID_AVAILABLE""}",47905 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715297498,1614715357498
+"{""clientId"":""CELADEV03"",""cid"":""202"",""bid"":""4"",""type"":""BID_AVAILABLE""}",184892 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715296568,1614715356568
+"{""clientId"":""CELADEV03"",""cid"":""119"",""bid"":""2"",""type"":""BID_AVAILABLE""}",180573 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715307967,1614715367967
+"{""clientId"":""CELADEV03"",""cid"":""196"",""bid"":""1"",""type"":""BID_AVAILABLE""}",192450 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715328822,1614715388822
+"{""clientId"":""CELADEV03"",""cid"":""189"",""bid"":""1"",""type"":""BID_AVAILABLE""}",177667 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715327494,1614715387494
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""4"",""type"":""BID_AVAILABLE""}",21060 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715322449,1614715382449
+"{""clientId"":""CELADEV03"",""cid"":""123"",""bid"":""1"",""type"":""BID_AVAILABLE""}",27763 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715330092,1614715390092
+"{""clientId"":""CELADEV03"",""cid"":""183"",""bid"":""1"",""type"":""BID_AVAILABLE""}",28263 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715381905,1614715441905
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""79"",""type"":""BID_AVAILABLE""}",22596 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715388309,1614715448309
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""4"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715384741,1614715444741
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""11"",""type"":""BID_AVAILABLE""}",21528 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715458924,1614715518924
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""18"",""type"":""BID_AVAILABLE""}",33122 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715447991,1614715507991
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""1"",""type"":""BID_AVAILABLE""}",53978 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715449616,1614715509616
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""2"",""type"":""BID_AVAILABLE""}",52657 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715472764,1614715532764
+"{""clientId"":""CELADEV03"",""cid"":""210"",""bid"":""1"",""type"":""BID_AVAILABLE""}",47417 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715468440,1614715528440
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""2"",""type"":""BID_AVAILABLE""}",55262 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715314744,1614715374744
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""89"",""type"":""BID_AVAILABLE""}",107093 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715320468,1614715380468
+"{""clientId"":""CELADEV03"",""cid"":""140"",""bid"":""1"",""type"":""BID_AVAILABLE""}",113259 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715356039,1614715416039
+"{""clientId"":""CELADEV03"",""cid"":""198"",""bid"":""2"",""type"":""BID_AVAILABLE""}",109914 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715316604,1614715376604
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""6"",""type"":""BID_AVAILABLE""}",183866 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715386681,1614715446681
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""5"",""type"":""BID_AVAILABLE""}",173084 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715376963,1614715436963
+"{""clientId"":""CELADEV03"",""cid"":""186"",""bid"":""1"",""type"":""BID_AVAILABLE""}",174667 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715379068,1614715439068
+"{""clientId"":""CELADEV03"",""cid"":""200"",""bid"":""2"",""type"":""BID_AVAILABLE""}",197718 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715402529,1614715462529
+"{""clientId"":""CELADEV03"",""cid"":""132"",""bid"":""1"",""type"":""BID_AVAILABLE""}",193403 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715404131,1614715464131
+"{""clientId"":""CELADEV03"",""cid"":""116"",""bid"":""2"",""type"":""BID_AVAILABLE""}",39774 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715397344,1614715457344
+"{""clientId"":""CELADEV03"",""cid"":""139"",""bid"":""1"",""type"":""BID_AVAILABLE""}",45590 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715658830,1614715718830
+"{""clientId"":""CELADEV03"",""cid"":""52"",""bid"":""2"",""type"":""BID_AVAILABLE""}",80984 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715462488,1614715522488
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""92"",""type"":""BID_AVAILABLE""}",41784 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715456080,1614715516080
+"{""clientId"":""CELADEV03"",""cid"":""106"",""bid"":""3"",""type"":""BID_AVAILABLE""}",111635 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715473708,1614715533708
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""3"",""type"":""BID_AVAILABLE""}",102122 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715477594,1614715537594
+"{""clientId"":""CELADEV03"",""cid"":""69"",""bid"":""1"",""type"":""BID_AVAILABLE""}",104027 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715478044,1614715538044
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""81"",""type"":""BID_AVAILABLE""}",127535 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715497184,1614715557184
+"{""clientId"":""CELADEV03"",""cid"":""204"",""bid"":""1"",""type"":""BID_AVAILABLE""}",129155 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715461881,1614715521881
+"{""clientId"":""CELADEV03"",""cid"":""207"",""bid"":""1"",""type"":""BID_AVAILABLE""}",122319 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715521209,1614715581209
+"{""clientId"":""CELADEV03"",""cid"":""151"",""bid"":""1"",""type"":""BID_AVAILABLE""}",383847 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715517504,1614715577504
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""4"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715444818,1614715504818
+"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""7"",""type"":""BID_AVAILABLE""}",187475 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715446251,1614715506251
+"{""clientId"":""CELADEV03"",""cid"":""155"",""bid"":""1"",""type"":""BID_AVAILABLE""}",181033 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715445765,1614715505765
+"{""clientId"":""CELADEV03"",""cid"":""220"",""bid"":""2"",""type"":""BID_AVAILABLE""}",198662 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715459373,1614715519373
+"{""clientId"":""CELADEV03"",""cid"":""194"",""bid"":""1"",""type"":""BID_AVAILABLE""}",202538 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715475474,1614715535474
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""90"",""type"":""BID_AVAILABLE""}",202987 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715478970,1614715538970
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""2"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715510107,1614715570107
+"{""clientId"":""CELADEV03"",""cid"":""181"",""bid"":""1"",""type"":""BID_AVAILABLE""}",222164 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715529171,1614715589171
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""93"",""type"":""BID_AVAILABLE""}",186982 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715487068,1614715547068
+"{""clientId"":""CELADEV03"",""cid"":""71"",""bid"":""2"",""type"":""BID_AVAILABLE""}",246161 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715476087,1614715536087
+"{""clientId"":""CELADEV03"",""cid"":""66"",""bid"":""4"",""type"":""BID_AVAILABLE""}",242469 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715448592,1614715508592
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""3"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715502293,1614715562293
+"{""clientId"":""CELADEV03"",""cid"":""68"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715503995,1614715563995
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715519762,1614715579762
+"{""clientId"":""CELADEV03"",""cid"":""82"",""bid"":""2"",""type"":""BID_AVAILABLE""}",169788 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715517012,1614715577012
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""10"",""type"":""BID_AVAILABLE""}",171214 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715488986,1614715548986
+"{""clientId"":""CELADEV03"",""cid"":""36"",""bid"":""1"",""type"":""BID_AVAILABLE""}",170744 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715522603,1614715582603
+"{""clientId"":""CELADEV03"",""cid"":""193"",""bid"":""1"",""type"":""BID_AVAILABLE""}",184342 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715519177,1614715579177
+"{""clientId"":""CELADEV03"",""cid"":""214"",""bid"":""1"",""type"":""BID_AVAILABLE""}",200580 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715508229,1614715568229
+"{""clientId"":""CELADEV03"",""cid"":""182"",""bid"":""1"",""type"":""BID_AVAILABLE""}",203935 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715525637,1614715585637
+"{""clientId"":""CELADEV03"",""cid"":""90"",""bid"":""3"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715536067,1614715596067
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""5"",""type"":""BID_AVAILABLE""}",235101 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715523554,1614715583554
+"{""clientId"":""CELADEV03"",""cid"":""188"",""bid"":""1"",""type"":""BID_AVAILABLE""}",254155 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715541258,1614715601258
+"{""clientId"":""CELADEV03"",""cid"":""121"",""bid"":""2"",""type"":""BID_AVAILABLE""}",212047 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715578657,1614715638657
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""11"",""type"":""BID_AVAILABLE""}",201066 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715617816,1614715677816
+"{""clientId"":""CELADEV03"",""cid"":""202"",""bid"":""2"",""type"":""BID_AVAILABLE""}",173554 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715609214,1614715669214
+"{""clientId"":""CELADEV03"",""cid"":""132"",""bid"":""4"",""type"":""BID_AVAILABLE""}",227372 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715615938,1614715675938
+"{""clientId"":""CELADEV03"",""cid"":""202"",""bid"":""5"",""type"":""BID_AVAILABLE""}",229152 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715564837,1614715624837
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""69"",""type"":""BID_AVAILABLE""}",244772 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715583994,1614715643994
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""6"",""type"":""BID_AVAILABLE""}",241998 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715571752,1614715631752
+"{""clientId"":""CELADEV03"",""cid"":""106"",""bid"":""2"",""type"":""BID_AVAILABLE""}",213943 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715577143,1614715637143
+"{""clientId"":""CELADEV03"",""cid"":""191"",""bid"":""1"",""type"":""BID_AVAILABLE""}",247578 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715615461,1614715675461
+"{""clientId"":""CELADEV03"",""cid"":""201"",""bid"":""2"",""type"":""BID_AVAILABLE""}",244256 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715625752,1614715685752
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""13"",""type"":""BID_AVAILABLE""}",233180 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715665514,1614715725514
+"{""clientId"":""CELADEV03"",""cid"":""72"",""bid"":""4"",""type"":""BID_AVAILABLE""}",250591 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715301519,1614715361519
+"{""clientId"":""CELADEV03"",""cid"":""215"",""bid"":""1"",""type"":""BID_AVAILABLE""}",261018 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715317291,1614715377291
+"{""clientId"":""CELADEV03"",""cid"":""116"",""bid"":""4"",""type"":""BID_AVAILABLE""}",248524 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715306810,1614715366810
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""22"",""type"":""BID_AVAILABLE""}",266229 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715340402,1614715400402
+"{""clientId"":""CELADEV03"",""cid"":""209"",""bid"":""1"",""type"":""BID_AVAILABLE""}",303638 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715359441,1614715419441
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""19"",""type"":""BID_AVAILABLE""}",342791 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715377627,1614715437627
+"{""clientId"":""CELADEV03"",""cid"":""153"",""bid"":""3"",""type"":""BID_AVAILABLE""}",334173 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715391038,1614715451038
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""3"",""type"":""BID_AVAILABLE""}",340898 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715395395,1614715455395
+"{""clientId"":""CELADEV03"",""cid"":""201"",""bid"":""1"",""type"":""BID_AVAILABLE""}",289928 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715481341,1614715541341
+"{""clientId"":""CELADEV03"",""cid"":""72"",""bid"":""1"",""type"":""BID_AVAILABLE""}",308952 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715629198,1614715689198
+"{""clientId"":""CELADEV03"",""cid"":""70"",""bid"":""3"",""type"":""BID_AVAILABLE""}",296704 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715628203,1614715688203
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""5"",""type"":""BID_AVAILABLE""}",302113 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715635528,1614715695528
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""17"",""type"":""BID_AVAILABLE""}",340433 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715639432,1614715699432
+"{""clientId"":""CELADEV03"",""cid"":""127"",""bid"":""4"",""type"":""BID_AVAILABLE""}",350707 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715664565,1614715724565
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""78"",""type"":""BID_AVAILABLE""}",390469 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715669482,1614715729482
+"{""clientId"":""CELADEV03"",""cid"":""76"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715507182,1614715567182
+"{""clientId"":""CELADEV03"",""cid"":""135"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715512311,1614715572311
+"{""clientId"":""CELADEV03"",""cid"":""197"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715565435,1614715625435
+"{""clientId"":""CELADEV03"",""cid"":""198"",""bid"":""1"",""type"":""BID_AVAILABLE""}",26493 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715558476,1614715618476
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""10"",""type"":""BID_AVAILABLE""}",42438 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715581085,1614715641085
+"{""clientId"":""CELADEV03"",""cid"":""66"",""bid"":""1"",""type"":""BID_AVAILABLE""}",31989 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715572803,1614715632803
+"{""clientId"":""CELADEV03"",""cid"":""17"",""bid"":""1"",""type"":""BID_AVAILABLE""}",65552 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715576635,1614715636635
+"{""clientId"":""CELADEV03"",""cid"":""153"",""bid"":""1"",""type"":""BID_AVAILABLE""}",84591 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715610202,1614715670202
+"{""clientId"":""CELADEV03"",""cid"":""123"",""bid"":""2"",""type"":""BID_AVAILABLE""}",102573 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715652582,1614715712582
+"{""clientId"":""CELADEV03"",""cid"":""67"",""bid"":""2"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715656929,1614715716929
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""8"",""type"":""BID_AVAILABLE""}",116005 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715660746,1614715720746
+"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""80"",""type"":""BID_AVAILABLE""}",120844 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715478493,1614715538493
+"{""clientId"":""CELADEV03"",""cid"":""108"",""bid"":""1"",""type"":""BID_AVAILABLE""}",206347 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715447201,1614715507201
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""7"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715496736,1614715556736
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715470860,1614715530860
+"{""clientId"":""CELADEV03"",""cid"":""128"",""bid"":""1"",""type"":""BID_AVAILABLE""}",Log stream name is not found,1614715516084,1614715576084
+"{""clientId"":""CELADEV03"",""cid"":""153"",""bid"":""2"",""type"":""BID_AVAILABLE""}",354161 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715531847,1614715591847
+"{""clientId"":""CELADEV03"",""cid"":""195"",""bid"":""2"",""type"":""BID_AVAILABLE""}",353174 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715491458,1614715551458
+"{""clientId"":""CELADEV03"",""cid"":""175"",""bid"":""1"",""type"":""BID_AVAILABLE""}",360466 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715564147,1614715624147
+"{""clientId"":""CELADEV03"",""cid"":""34"",""bid"":""4"",""type"":""BID_AVAILABLE""}",364403 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,1614715578117,1614715638117
+,389516 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,394637 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,232145 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,237280 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,290389 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,283419 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,306038 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,297790 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,301636 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,335166 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,377585 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,381882 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,385720 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,203463 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,172485 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,221678 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,195821 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,241033 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,256997 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,216406 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,289329 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,303146 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
+,Log stream name is not found,,
