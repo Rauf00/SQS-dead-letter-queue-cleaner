@@ -4,7 +4,7 @@ AWS.config.update({region: 'us-east-2'});
 const cloudwatchlogs = new AWS.CloudWatchLogs();
 let sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 let queueURL = "https://sqs.us-east-2.amazonaws.com/955577125609/dev-OH-due-schedules-dead-queue";
-const NUM_OF_MSG_IN_SQS = 2;
+const NUM_OF_MSG_IN_SQS = 10;
 const csvWriter = createCsvWriter({
     path: 'out.csv',
     header: [
@@ -27,7 +27,7 @@ const recieveSQSmessages = () => {
                 AttributeNames: [
                     "All"
                 ],
-                MaxNumberOfMessages: 2,
+                MaxNumberOfMessages: 10,
                 QueueUrl: queueURL,
             };
             sqs.receiveMessage(params, async function(err, data) {
@@ -103,6 +103,11 @@ const getLogStreamName = async function(startTime, endTime, message){
     while(logStream.status !== 'Complete'){
         logStream = await runQuery(queryID)
     }
+    if(logStream.results.length === 0){
+        console.log("Log Stream isn't found")
+        logsNotFoundCounter++;
+        return '';
+    }
     return logStream.results[0][1].value
 }
 
@@ -144,18 +149,27 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
         let endTimeInt = parseInt(startTime) + 60000
         let endTime = endTimeInt.toString();
         let logStreamName = await getLogStreamName(startTime, endTime, message)
-
-        // get logs from the Log Stream 
-        let logsFromStream = await getLogsFromStream(startTime, endTime, logStreamName);
-
-        for(const log of logsFromStream){
-            if(log.message.includes("[main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR:")){
-                console.log(log.message)
-                resultLogs.push(log.message)
+        if(logStreamName === ''){
+            resultLogs.push('Log is not found')
+        } else{
+            // get logs from the Log Stream 
+            let logsFromStream = await getLogsFromStream(startTime, endTime, logStreamName);
+            console.log("INFO com.celayix.consumer.AppServerProxy - main- requestPayload :" + message.Body)
+            for(let i = 0; i < logsFromStream.length; i++){
+                if(logsFromStream[i].message.includes("INFO com.celayix.consumer.AppServerProxy  - main- requestPayload :" + message.Body.toString())){
+                    for(let j = i; j < logsFromStream.length; j++){
+                        if(logsFromStream[j].message.includes("ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error:")){
+                            console.log(logsFromStream[j].message)
+                            resultLogs.push(logsFromStream[j].message)
+                            break;
+                        }
+                    }
+                    break;
+                }
             }
+            messagePayloads.push(message.Body)
+            console.log()
         }
-        messagePayloads.push(message.Body)
-        console.log()
     }
 }
 

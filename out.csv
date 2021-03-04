@@ -1,3 +1,11 @@
 Message Payload in SQS,Log Message in CloudWatch,Query Start Time,Query End Time
-"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""6"",""type"":""BID_AVAILABLE""}",36661 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
-"{""clientId"":""CELADEV03"",""cid"":""75"",""bid"":""96"",""type"":""BID_AVAILABLE""}",18486 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""90"",""bid"":""1"",""type"":""BID_AVAILABLE""}",185345 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""31"",""bid"":""14"",""type"":""BID_AVAILABLE""}",170259 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""66"",""bid"":""2"",""type"":""BID_AVAILABLE""}",216863 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""203"",""bid"":""1"",""type"":""BID_AVAILABLE""}",196300 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""122"",""bid"":""1"",""type"":""BID_AVAILABLE""}",227836 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""8"",""type"":""BID_AVAILABLE""}",239197 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""50"",""bid"":""4"",""type"":""BID_AVAILABLE""}",232723 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""118"",""bid"":""12"",""type"":""BID_AVAILABLE""}",261484 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""120"",""bid"":""2"",""type"":""BID_AVAILABLE""}",223592 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
+"{""clientId"":""CELADEV03"",""cid"":""71"",""bid"":""3"",""type"":""BID_AVAILABLE""}",267191 [main] ERROR com.celayix.consumer.AppServerProxy  - AppServer call returned error: ERROR: ; ,,
