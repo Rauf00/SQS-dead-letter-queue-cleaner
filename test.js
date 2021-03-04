@@ -86,8 +86,9 @@ const runQuery = async(params) => {
 };
 
 const getLogStreamName = async function(startTime, endTime, message){
+    console.log('Searching for log in time range: ', startTime, endTime);
     let messagBodyObj = JSON.parse(message.Body)
-    let payload = '"clientId":"' + messagBodyObj.clientId + '","cid":' + messagBodyObj.cid + ',"bid":' + messagBodyObj.bid + ',"type":"' + messagBodyObj.type + '"'
+    let payload = '"clientId":"' + messagBodyObj.clientId + '","cid":"' + messagBodyObj.cid + '","bid":"' + messagBodyObj.bid + '","type":"' + messagBodyObj.type + '"'
     let params = {
         startTime: startTime,
         endTime: endTime,
@@ -96,16 +97,14 @@ const getLogStreamName = async function(startTime, endTime, message){
             'dev-OH-TaskConsumer'
         ]
     }
+    console.log('QueryString: ', "fields @timestamp, @logStream | sort @timestamp asc | filter @message like /" + payload + "/")
     let queryID = await createQuery(params);
     let logStream = await runQuery(queryID);
     while(logStream.status !== 'Complete'){
-        console.log('not yet')
         logStream = await runQuery(queryID)
     }
-    console.log(logStream)
     return logStream.results[0][1].value
 }
-
 
 const getLogsFromStream = function(startTime, endTime, logStreamName){
     var params = {
@@ -127,10 +126,7 @@ const getLogsFromStream = function(startTime, endTime, logStreamName){
       
 }
 
-const resultLogs = [];
-
 const getErrorLogForSQSmessages = async function(SQSmessages) {
-    let queryIDs = [];
     for (const message of SQSmessages){
         // skip message and delete it
         if (processedSQSMessages.includes(message.Body)){
@@ -145,9 +141,9 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
 
         // get @logStream name in the Log Group using the message payload
         let startTime = message.Attributes.ApproximateFirstReceiveTimestamp;
-        let endTimeInt = parseInt(message.Attributes.ApproximateFirstReceiveTimestamp) + 60000
+        let endTimeInt = parseInt(startTime) + 60000
         let endTime = endTimeInt.toString();
-        let logStreamName = await getLogStreamName(message.Attributes.ApproximateFirstReceiveTimestamp, endTime, message)
+        let logStreamName = await getLogStreamName(startTime, endTime, message)
 
         // get logs from the Log Stream 
         let logsFromStream = await getLogsFromStream(startTime, endTime, logStreamName);
@@ -159,18 +155,18 @@ const getErrorLogForSQSmessages = async function(SQSmessages) {
             }
         }
         messagePayloads.push(message.Body)
+        console.log()
     }
-    return queryIDs;
 }
 
-const writeToCSV = (messagePayloads, queryResults) => {
+const writeToCSV = (messagePayloads, resultLogs) => {
     let outputCSV = [];
-        for (let i = 0; i < queryResults.length; i++){
+        for (let i = 0; i < resultLogs.length; i++){
             let output = {};
             output["messagePayload"] = messagePayloads[i];
-            output["log"] = queryResults[i][1];
-            output["queryStartTime"] = queryStartTimes[i];
-            output["queryEndTime"] = queryEndTimes[i];
+            output["log"] = resultLogs[i];
+            // output["queryStartTime"] = queryStartTimes[i];
+            // output["queryEndTime"] = queryEndTimes[i];
             outputCSV.push(output)
         }
         csvWriter
@@ -179,19 +175,18 @@ const writeToCSV = (messagePayloads, queryResults) => {
 }
 
 let messagePayloads = [];
-let queryResults = [];
+const resultLogs = [];
 let msgCounter = 0;
 const getAllResults = async function(){
     while (msgCounter < NUM_OF_MSG_IN_SQS){
         console.log('\nStarted retrieving next 10 SQS messages...\n')
         await recieveSQSmessages().then(async (data) => {
-            let queryIDs = await getErrorLogForSQSmessages(data.Messages);
-            // await receiveLogs(queryIDs, data.Messages)
+            await getErrorLogForSQSmessages(data.Messages);
         })
         
         msgCounter += 10;
     }
-    // writeToCSV(messagePayloads, queryResults);
+    writeToCSV(messagePayloads, resultLogs);
     console.log();
     console.log('Not found logs for ' + logsNotFoundCounter + ' SQS Messages')
     console.log(NUM_OF_MSG_IN_SQS + ' SQS Messages are processed');
